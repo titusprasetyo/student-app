@@ -98,7 +98,7 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 }
 
 func mainroot(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Try <ol><li>http://<host>/user/list</li><li>http://<host>user/get-by-id?id=<id></li><li>http://<host>user/add?id=<id>&name=<name>&grade=<grade></li></ol>")
+	fmt.Fprintf(w, "<html>Try <ol><li>http://[host]/user/list</li><li>http://[host]/user/get-by-id?id=[id]</li><li>http://[host]/user/add?id=[id]&name=[name]&grade=[grade]</li></ol></html>")
 }
 
 func main() {
